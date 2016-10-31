@@ -31,12 +31,12 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs. 
 // ================================================================================
 
-var apiRoute = require('./app/routing/api-routes.js')
+var apiRoute = require('./app/routing/api-routes.js');
 
 apiRoute(app); 
-//require('./app/routing/html-routes.js')(app);
+var htmlRoute = require('./app/routing/html-routes.js');
+htmlRoute(app);
 
-console.log("hello world!")
 // ==============================================================================
 // LISTENER
 // The below code effectively "starts" our server 
