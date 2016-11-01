@@ -1,36 +1,273 @@
 <!DOCTYPE HTML>
 <HTML>
 <HEAD>
-<!-- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
 <!-- Compiled and minified CSS materialize -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 <!-- Compiled and minified JavaScript- materialize -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 
-<script src="https://code.jquery.com/jquery.js"></script>
-<title>Friend Finder</title>
+<title>Friend Finder - Survey</title>
 </HEAD>
 <BODY>
 
 <nav class = "deep-purple lighten-1">
-  <div class="nav-wrapper  container">
+    <div class="nav-wrapper  container">
       <a href="#" class="brand-logo">Friend Finder</a>
       <!-- <ul id="nav-mobile" class="right hide-on-med-and-down"> -->
       <ul class="right hide-on-med-and-down">
-      <li><a href="/survey" class="waves-effect purple darken-4 btn">Go to home</a></li>
+      <li><a href="/#" class="waves-effect purple darken-4 btn">Go to Home</a></li>
       </ul>
-  </div>
+    </div>
 </nav>
+
+<div class="container">
+<form class="col s12">
+<div class = "row">
+  <div class="input-field col s6">
+   <input placeholder="Name" id="name" type="text" class="validate">
+      <label for="name">Name</label>
+  </div>
+</div>
+
+<div class = "row">
+  <div class="input-field col s6">
+   <input placeholder="URL" id="picture" type="text" class="validate">
+      <label for="name">Picture</label>
+  </div>
+</div>
+
+
+  <div class = "row">
+  <!--    Question 1 -->
+  <p><strong>You like to spend Money</strong></p>
+  <div class="input-field col s4">
+      <select id = "qus1">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1"> 1</option>
+        <option value="2"> 2</option>
+        <option value="3"> 3</option>
+        <option value="4"> 4</option>
+        <option value="5"> 5</option>
+      </select>
+      <label>You like to spend Money</label>
+  </div>
+  </div>
+<br> 
+
+  <div class = "row">
+  <!--    Question 2 -->
+  <p><strong> You like to stay in Hotels</strong></p>
+  <div class="input-field col s4">
+      <select id = "qus2">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1"> 1</option>
+        <option value="2"> 2</option>
+        <option value="3"> 3</option>
+        <option value="4"> 4</option>
+        <option value="5"> 5</option>
+      </select>
+      <label>You like to stay in Hotels</label>
+  </div>
+  </div>
+<br> 
+
+<div class = "row">
+  <!--    Question 3 -->
+  <p><strong>You can handle stress </strong></p>
+  <div class="input-field col s4">
+      <select id = "qus3">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1"> 1</option>
+        <option value="2"> 2</option>
+        <option value="3"> 3</option>
+        <option value="4"> 4</option>
+        <option value="5"> 5</option>
+      </select>
+      <!-- <label>You like to stay in Hotels</label> -->
+  </div>
+  </div>
+<br> 
+
+
+<div class = "row">
+  <!--    Question 4 -->
+  <p><strong>You like to taste different food.</strong></p>
+  <div class="input-field col s4">
+      <select id = "qus4">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1"> 1</option>
+        <option value="2"> 2</option>
+        <option value="3"> 3</option>
+        <option value="4"> 4</option>
+        <option value="5"> 5</option>
+      </select>
+      <!-- <label><strong> You like to stay in Hotels</strong></label> -->
+  </div>
+  </div>
+<br> 
+
+<div class = "row">
+  <!--    Question 5 -->
+  <p><strong>You go with the flow on a trip</strong></p>
+  <div class="input-field col s4">
+      <select id = "qus5">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1"> 1</option>
+        <option value="2"> 2</option>
+        <option value="3"> 3</option>
+        <option value="4"> 4</option>
+        <option value="5"> 5</option>
+      </select>
+      <!-- <label><strong> You like to stay in Hotels</strong></label> -->
+  </div>
+  </div>
+<br> 
+
+<div class = "row">
+  <!--    Question 6 -->
+  <p><strong>You like adventure.</strong></p>
+  <div class="input-field col s4">
+      <select id = "qus6">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1"> 1</option>
+        <option value="2"> 2</option>
+        <option value="3"> 3</option>
+        <option value="4"> 4</option>
+        <option value="5"> 5</option>
+      </select>
+      <!-- <label><strong> You like to stay in Hotels</strong></label> -->
+  </div>
+  </div>
+<br> 
+
+
+<div class = "row">
+  <!--    Question 7 -->
+  <p><strong>You like spa .</strong></p>
+  <div class="input-field col s4">
+      <select id = "qus7">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1"> 1</option>
+        <option value="2"> 2</option>
+        <option value="3"> 3</option>
+        <option value="4"> 4</option>
+        <option value="5"> 5</option>
+      </select>
+      <!-- <label><strong> You like to stay in Hotels</strong></label> -->
+  </div>
+  </div>
+<br> 
+
+<div class = "row">
+  <!--    Question 8 -->
+  <p><strong>Watch TV in the evening.</strong></p>
+  <div class="input-field col s4">
+      <select id = "qus8">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1"> 1</option>
+        <option value="2"> 2</option>
+        <option value="3"> 3</option>
+        <option value="4"> 4</option>
+        <option value="5"> 5</option>
+      </select>
+      <!-- <label><strong> You like to stay in Hotels</strong></label> -->
+  </div>
+  </div>
+<br> 
+
+<!--    Question 8 -->
+  <p><strong>Watch TV in the evening.</strong></p>
+  <div class="input-field col s4">
+      <select id = "qus8">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1"> 1</option>
+        <option value="2"> 2</option>
+        <option value="3"> 3</option>
+        <option value="4"> 4</option>
+        <option value="5"> 5</option>
+      </select>
+      <!-- <label><strong> You like to stay in Hotels</strong></label> -->
+  </div>
+  </div>
+<br> 
+
+
+<!--    Question 9 -->
+  <p><strong>You are up after 12:00 AM everyday.</strong></p>
+  <div class="input-field col s4">
+      <select id = "qus9">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1"> 1</option>
+        <option value="2"> 2</option>
+        <option value="3"> 3</option>
+        <option value="4"> 4</option>
+        <option value="5"> 5</option>
+      </select>
+  </div>
+  </div>
+<br> 
+
+
+<!--    Question 10 -->
+  <p><strong>You like to visit China.</strong></p>
+  <div class="input-field col s4">
+      <select id = "qus10">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1"> 1</option>
+        <option value="2"> 2</option>
+        <option value="3"> 3</option>
+        <option value="4"> 4</option>
+        <option value="5"> 5</option>
+      </select>
+  </div>
+  </div>
+<br> 
+
+
+
+
+
+
+<hr>
+
+    <a class="waves-effect waves-light btn" id="submit">Submit</a>
+
+</div>
+</form>
+</div>
 
 
 
 <footer class="footer">
   <div class="container">
-    <p><a href="/api/friendlist">API Friends List Link</a> | <a href="https://github.com/Senthilselva/FriendFinder">GitHub Repo</a></p>
+  <!-- blue-text text-darken-2 -->
+    <p><a class = "purple-text text-darken-2" href="/api/friendlist">API Friends List Link</a> | <a class = "purple-text text-darken-2" href="https://github.com/Senthilselva/FriendFinder">GitHub Repo</a></p>
   </div>
 </footer>
 
-
 </BODY>
 </HTML>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    //for materialize
+    $('select').material_select();
+
+
+  $("#submit").on("click", function(){
+        var newFriend = {
+          name: $("#name").val()
+
+        }
+        var ans1= $("#qus1").val()
+      console.log(newFriend.name+ "     "+ ans1);
+    });
+
+
+
+}); //Document READY
+
+</script>
