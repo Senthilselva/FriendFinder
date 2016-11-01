@@ -30,7 +30,7 @@ module.exports = function (app) {
 				sum[i] = 0;
 				for(var j=0; j < 3; j++){
 					//if (!isNAN(newFriend.scores[j]) && !isNAN(friends[i].scores[j]))
-					sum[i] += Math.abs(newFriend.scores[j] - friends[i].scores[j]);
+					sum[i] += Math.abs(parseInt(newFriend.scores[j]) - parseInt(friends[i].scores[j]));
 					//break;
 				}
 				// console.log (sum[i]);	

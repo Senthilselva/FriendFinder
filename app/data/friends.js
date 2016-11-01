@@ -23,7 +23,7 @@ var FriendArray = [
 	}, {
 
 	name: "Ahmed",
-	photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+	photo: "https://static.pexels.com/photos/132419/pexels-photo-132419.jpeg",
 	scores: [
 	5,
 	1,
@@ -39,7 +39,7 @@ var FriendArray = [
 	},
 	{
 	name: "Jacob Deming",
-	photo: "https://pbs.twimg.com/profile_images/691785039043022849/oWsy8LNR.jpg",
+	photo: "https://static.pexels.com/photos/103573/pexels-photo-103573.jpeg",
 	scores: [
 	4,
 	2,
@@ -55,7 +55,7 @@ var FriendArray = [
 	},
 	{
 	name: "Jeremiah Scanlon",
-	photo: "https://avatars2.githubusercontent.com/u/8504998?v=3&s=460",
+	photo: "http://weknowyourdreams.com/images/flowers/flowers-01.jpg",
 	scores: [
 	5,
 	2,
@@ -71,7 +71,7 @@ var FriendArray = [
 	},
 	{
 	name: "Louis T. Delia",
-	photo: "https://pbs.twimg.com/profile_images/639214960049000449/lNCRC-ub.jpg",
+	photo: "http://weknowyourdreams.com/images/flowers/flowers-03.jpg",
 	scores: [
 	3,
 	3,
@@ -87,15 +87,15 @@ var FriendArray = [
 	},
 	{
 	name: "Lou Ritter",
-	photo: "https://m.facebook.com/photo.php?fbid=10208500699025296&id=1542229019&set=a.1549418665704.77596.1542229019&source=11",
+	photo: "http://weknowyourdreams.com/images/flowers/flowers-07.jpg",
 	scores: [
+	5,
 	4,
 	3,
 	4,
 	1,
 	5,
 	2,
-	5,
 	3,
 	1,
 	4

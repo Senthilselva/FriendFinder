@@ -178,6 +178,7 @@
   </div>
 <br> 
 
+<div class = "row">
 <!--    Question 8 -->
   <p><strong>Watch TV in the evening.</strong></p>
   <div class="input-field col s4">
@@ -194,7 +195,7 @@
   </div>
 <br> 
 
-
+<div class = "row">
 <!--    Question 9 -->
   <p><strong>You are up after 12:00 AM everyday.</strong></p>
   <div class="input-field col s4">
@@ -210,10 +211,10 @@
   </div>
 <br> 
 
-
+<div class = "row">
 <!--    Question 10 -->
   <p><strong>You like to visit China.</strong></p>
-  <div class="input-field col s4">
+   <div class="input-field col s4">
       <select id = "qus10">
         <option value="" disabled selected>Choose your option</option>
         <option value="1"> 1</option>
@@ -228,16 +229,33 @@
 
 
 
-
-
+<div class = "row container">
+    <a class="waves-effect purple darken-4 btn" id="submit">Submit</a>
+</div>
 
 <hr>
 
-    <a class="waves-effect waves-light btn" id="submit">Submit</a>
-
+<br> <br>
 </div>
 </form>
 </div>
+
+
+
+
+ <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Your New Best Friend</h4>
+      <h5 id="modalFriendName"> </h5>
+      <p> <img src="http://weknowyourdreams.com/images/flowers/flowers-07.jpg" id = "modalPicture" width=100 height=100></p>   
+    </div> 
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect purple darken-4 btn-flat">Agree</a>
+    </div>
+  </div>
+
+
 
 
 
@@ -253,18 +271,48 @@
 
 <script type="text/javascript">
   $(document).ready(function() {
-    //for materialize
+    //for materializewaves-effect purple darken-4 btn
     $('select').material_select();
 
 
   $("#submit").on("click", function(){
-        var newFriend = {
-          name: $("#name").val()
+    var isValid = true;
+    var nameV = $("#name").val().trim();
+    var pictureV = $("#picture").val().trim();
 
+    var newFriend = {
+      name: nameV,
+      picture: pictureV,
+      scores:[]
+    }
+
+    for(var i=0; i<3; i++){
+
+      var ans = $("#qus"+(i+1)).val();
+      //console.log(ans)
+        if(!ans){
+          isValid = false;
+        } else {
+          newFriend.scores.push(ans);
         }
-        var ans1= $("#qus1").val()
-      console.log(newFriend.name+ "     "+ ans1);
-    });
+
+    }//for loop 
+
+      //console.log(newFriend.name + newFriend.scores);
+
+    var currentURL = window.location.origin;
+
+        $.post(currentURL + "/api/friend", newFriend, function(data){
+          console.log(data);
+
+          $("#modalFriendName").text(data.name);
+         // $("#modalPicture").attr("src", data.photo);
+
+           // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+          $('#modal1').openModal();
+        });//POST
+
+    });//submit 
 
 
 
