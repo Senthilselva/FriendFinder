@@ -8,7 +8,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 <!-- Compiled and minified JavaScript- materialize -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-
+<style type="text/css">
+  .picture{
+    width:100px;
+    height:100px;
+  }
+</style>
 <title>Friend Finder - Survey</title>
 </HEAD>
 <BODY>
@@ -18,41 +23,44 @@
       <a href="#" class="brand-logo">Friend Finder</a>
       <!-- <ul id="nav-mobile" class="right hide-on-med-and-down"> -->
       <ul class="right hide-on-med-and-down">
-      <li><a href="/#" class="waves-effect purple darken-4 btn">Go to Home</a></li>
+      <li><a href="/#" class="waves-effect purple darken-4 btn">Home</a></li>
       </ul>
     </div>
 </nav>
-
+<br> <br>
 <div class="container">
 <form class="col s12">
 <div class = "row">
   <div class="input-field col s6">
-   <input placeholder="Name" id="name" type="text" class="validate">
+   <input placeholder="Name" id="name" type="text" >
       <label for="name">Name</label>
   </div>
 </div>
 
+<br> <br>
 <div class = "row">
   <div class="input-field col s6">
-   <input placeholder="URL" id="picture" type="text" class="validate">
+   <input placeholder="URL" id="picture" type="text" >
       <label for="name">Picture</label>
   </div>
 </div>
 
-
+<br>
+<hr>
+<br>
   <div class = "row">
   <!--    Question 1 -->
   <p><strong>You like to spend Money</strong></p>
   <div class="input-field col s4">
       <select id = "qus1">
         <option value="" disabled selected>Choose your option</option>
-        <option value="1"> 1</option>
+        <option value="1"> 1 (Strongly Disagree) </option>
         <option value="2"> 2</option>
         <option value="3"> 3</option>
         <option value="4"> 4</option>
-        <option value="5"> 5</option>
+        <option value="5"> 5 (Strongly Agree)</option>
       </select>
-      <label>You like to spend Money</label>
+      <!-- <label>You like to spend Money</label> -->
   </div>
   </div>
 <br> 
@@ -63,13 +71,13 @@
   <div class="input-field col s4">
       <select id = "qus2">
         <option value="" disabled selected>Choose your option</option>
-        <option value="1"> 1</option>
+        <option value="1"> 1 (Strongly Disagree)</option>
         <option value="2"> 2</option>
         <option value="3"> 3</option>
         <option value="4"> 4</option>
-        <option value="5"> 5</option>
+        <option value="5"> 5 (Strongly Agree)</option>
       </select>
-      <label>You like to stay in Hotels</label>
+      <!-- <label>You like to stay in Hotels</label> -->
   </div>
   </div>
 <br> 
@@ -80,11 +88,11 @@
   <div class="input-field col s4">
       <select id = "qus3">
         <option value="" disabled selected>Choose your option</option>
-        <option value="1"> 1</option>
+        <option value="1"> 1 (Strongly Disagree)</option>
         <option value="2"> 2</option>
         <option value="3"> 3</option>
         <option value="4"> 4</option>
-        <option value="5"> 5</option>
+        <option value="5"> 5 (Strongly Agree)</option>
       </select>
       <!-- <label>You like to stay in Hotels</label> -->
   </div>
@@ -98,11 +106,11 @@
   <div class="input-field col s4">
       <select id = "qus4">
         <option value="" disabled selected>Choose your option</option>
-        <option value="1"> 1</option>
+        <option value="1"> 1 (Strongly Disagree)</option>
         <option value="2"> 2</option>
         <option value="3"> 3</option>
         <option value="4"> 4</option>
-        <option value="5"> 5</option>
+        <option value="5"> 5 (Strongly Agree)</option>
       </select>
       <!-- <label><strong> You like to stay in Hotels</strong></label> -->
   </div>
@@ -115,11 +123,11 @@
   <div class="input-field col s4">
       <select id = "qus5">
         <option value="" disabled selected>Choose your option</option>
-        <option value="1"> 1</option>
+        <option value="1"> 1 (Strongly Disagree)</option>
         <option value="2"> 2</option>
         <option value="3"> 3</option>
         <option value="4"> 4</option>
-        <option value="5"> 5</option>
+        <option value="5"> 5 (Strongly Agree)</option>
       </select>
       <!-- <label><strong> You like to stay in Hotels</strong></label> -->
   </div>
@@ -132,11 +140,11 @@
   <div class="input-field col s4">
       <select id = "qus6">
         <option value="" disabled selected>Choose your option</option>
-        <option value="1"> 1</option>
+        <option value="1"> 1 (Strongly Disagree)</option>
         <option value="2"> 2</option>
         <option value="3"> 3</option>
         <option value="4"> 4</option>
-        <option value="5"> 5</option>
+        <option value="5"> 5 (Strongly Agree)</option>
       </select>
       <!-- <label><strong> You like to stay in Hotels</strong></label> -->
   </div>
@@ -150,11 +158,11 @@
   <div class="input-field col s4">
       <select id = "qus7">
         <option value="" disabled selected>Choose your option</option>
-        <option value="1"> 1</option>
+        <option value="1"> 1 (Strongly Disagree)</option>
         <option value="2"> 2</option>
         <option value="3"> 3</option>
         <option value="4"> 4</option>
-        <option value="5"> 5</option>
+        <option value="5"> 5 (Strongly Agree)</option>
       </select>
       <!-- <label><strong> You like to stay in Hotels</strong></label> -->
   </div>
@@ -167,11 +175,11 @@
   <div class="input-field col s4">
       <select id = "qus8">
         <option value="" disabled selected>Choose your option</option>
-        <option value="1"> 1</option>
+        <option value="1"> 1 (Strongly Disagree)</option>
         <option value="2"> 2</option>
         <option value="3"> 3</option>
         <option value="4"> 4</option>
-        <option value="5"> 5</option>
+        <option value="5"> 5 (Strongly Agree)</option>
       </select>
       <!-- <label><strong> You like to stay in Hotels</strong></label> -->
   </div>
@@ -184,11 +192,11 @@
   <div class="input-field col s4">
       <select id = "qus8">
         <option value="" disabled selected>Choose your option</option>
-        <option value="1"> 1</option>
+        <option value="1"> 1 (Strongly Disagree)</option>
         <option value="2"> 2</option>
         <option value="3"> 3</option>
         <option value="4"> 4</option>
-        <option value="5"> 5</option>
+        <option value="5"> 5 (Strongly Agree)</option>
       </select>
       <!-- <label><strong> You like to stay in Hotels</strong></label> -->
   </div>
@@ -201,11 +209,11 @@
   <div class="input-field col s4">
       <select id = "qus9">
         <option value="" disabled selected>Choose your option</option>
-        <option value="1"> 1</option>
+        <option value="1"> 1 (Strongly Disagree)</option>
         <option value="2"> 2</option>
         <option value="3"> 3</option>
         <option value="4"> 4</option>
-        <option value="5"> 5</option>
+        <option value="5"> 5 (Strongly Agree)</option>
       </select>
   </div>
   </div>
@@ -217,11 +225,11 @@
    <div class="input-field col s4">
       <select id = "qus10">
         <option value="" disabled selected>Choose your option</option>
-        <option value="1"> 1</option>
+        <option value="1"> 1 (Strongly Disagree)</option>
         <option value="2"> 2</option>
         <option value="3"> 3</option>
         <option value="4"> 4</option>
-        <option value="5"> 5</option>
+        <option value="5"> 5 (Strongly Agree)</option>
       </select>
   </div>
   </div>
@@ -248,10 +256,11 @@
     <div class="modal-content">
       <h4>Your New Best Friend</h4>
       <h5 id="modalFriendName"> </h5>
-      <p> <img src="http://weknowyourdreams.com/images/flowers/flowers-07.jpg" id = "modalPicture" width=100 height=100></p>   
+      <br>
+      <hr>
     </div> 
     <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect purple darken-4 btn-flat">Done</a>
+      <a href="#!" class=" modal-action modal-close waves-effect purple darken-4 btn-flat white-text">Done</a>
     </div>
   </div>
 
@@ -275,10 +284,14 @@
     $('select').material_select();
 
 
-  $("#submit").on("click", function(){
+$("#submit").on("click", function(){
     var isValid = true;
     var nameV = $("#name").val().trim();
     var pictureV = $("#picture").val().trim();
+
+    if(!nameV || !pictureV){
+      isValid = false;
+    }
 
     var newFriend = {
       name: nameV,
@@ -286,8 +299,8 @@
       scores:[]
     }
 
-    for(var i=0; i<3; i++){
-
+    //create an array to post 
+    for(var i=0; i<10; i++){
       var ans = $("#qus"+(i+1)).val();
       //console.log(ans)
         if(!ans){
@@ -298,21 +311,29 @@
 
     }//for loop 
 
-      //console.log(newFriend.name + newFriend.scores);
+    if(!isValid){
+      alert("All fieldss are required");
+      return false;
+    }
+
 
     var currentURL = window.location.origin;
 
         $.post(currentURL + "/api/friend", newFriend, function(data){
-          console.log(data);
 
-          $("#modalFriendName").text(data.name);
-         // $("#modalPicture").attr("src", data.photo);
+          var imgTag = $('<img>');
+              imgTag.addClass('picture');
+              imgTag.attr('src',data.photo);
+          var nametag = $("#modalFriendName");
+              nametag.text(data.name);
+              $("#modalFriendName").append(imgTag);
 
-           // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-          $('#modal1').openModal();
+
+          //console.log(data.name + JSON.stringify($("#modalFriendName")));
+          $('.modal').openModal();
         });//POST
 
-    });//submit 
+});//submit on click
 
 
 
