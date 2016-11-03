@@ -2,10 +2,11 @@
 <HTML>
 <HEAD>
 <script src="https://code.jquery.com/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
 <!-- Compiled and minified CSS materialize -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
 <!-- Compiled and minified JavaScript- materialize -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 <style type="text/css">
@@ -324,8 +325,11 @@ $("#submit").on("click", function(){
           var imgTag = $('<img>');
               imgTag.addClass('picture');
               imgTag.attr('src',data.photo);
+              console.log(imgTag.src + ""+ data.photo)
           var nametag = $("#modalFriendName");
               nametag.text(data.name);
+              nametag.append('<br>')
+              console.log(imgTag);
               $("#modalFriendName").append(imgTag);
 
 

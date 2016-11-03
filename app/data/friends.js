@@ -6,8 +6,8 @@
 // ===============================================================================
 var FriendArray = [
 	{
-		name: 'Kumar',
-		picture: 'https://static.pexels.com/photos/27714/pexels-photo-27714.jpg',
+		name: 'Bill Clinton',
+		photo: 'http://www.conservativedailyreview.com/wp-content/uploads/2016/08/Bill-Clinton.jpg',
 		scores :[
 		5,
 	     1,
@@ -22,8 +22,8 @@ var FriendArray = [
 		]
 	}, {
 
-	name: "Ahmed",
-	photo: "https://static.pexels.com/photos/132419/pexels-photo-132419.jpeg",
+	name: "Tim Raines",
+	photo: "http://a.espncdn.com/photo/2013/0103/mlb_hof_favorites_04.jpg",
 	scores: [
 	5,
 	1,
@@ -38,8 +38,8 @@ var FriendArray = [
 	]
 	},
 	{
-	name: "Jacob Deming",
-	photo: "https://static.pexels.com/photos/103573/pexels-photo-103573.jpeg",
+	name: "Donald Trump",
+	photo: "http://static4.businessinsider.com/image/56c640526e97c625048b822a-480/donald-trump.jpg",
 	scores: [
 	4,
 	2,
@@ -54,8 +54,8 @@ var FriendArray = [
 	]
 	},
 	{
-	name: "Jeremiah Scanlon",
-	photo: "http://weknowyourdreams.com/images/flowers/flowers-01.jpg",
+	name: "Selena Gomaz",
+	photo: "http://www.1ohww.org/these-celebrities-have-lupus/",
 	scores: [
 	5,
 	2,
@@ -70,8 +70,8 @@ var FriendArray = [
 	]
 	},
 	{
-	name: "Louis T. Delia",
-	photo: "http://weknowyourdreams.com/images/flowers/flowers-03.jpg",
+	name: "Hillary Clinton",
+	photo: "http://media.breitbart.com/media/2015/10/hillary-clinton-displeased-AP-640x480.jpg",
 	scores: [
 	3,
 	3,
@@ -86,7 +86,7 @@ var FriendArray = [
 	]
 	},
 	{
-	name: "Lou Ritter",
+	name: "Flower is your Friend",
 	photo: "http://weknowyourdreams.com/images/flowers/flowers-07.jpg",
 	scores: [
 	5,
