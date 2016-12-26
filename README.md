@@ -17,5 +17,4 @@ Used Node, Express and Body-Parser
 	    
 
 ## Technologies
-NodeJS, Express, React, Mongoose, Cheerios.
-# FriendFinder
+NodeJS, Express, Body-Parser
